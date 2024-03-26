@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/country`,
+        `/api/country`,
         {
           cache: "no-store",
         }
